@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/46480f0f3c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="home">
+      <div class="home__principal">
+        <div class="home__principal__container-nav">
+          <div class="nav-mobile">
+            <button class="nav-mobile__button-icon" onclick="onClickOpen()">
+              <img class="nav-mobile__button-icon_icon" src="./assets/images/icon-hamburger.svg" alt="nav-icon"/>
+            </button>
+            <img class="logo" src="./assets/images/logo.svg" alt="logo" />
+            <div></div>
+          </div>
+          <nav class="home__principal__container-nav__menu">
+            <ul>
+              <img class="logo" src="./assets/images/logo.svg" alt="logo" />
+              <button class="button-close" onclick="onClickClose()">
+                <img 
+                  class="button-close__icon" 
+                  src="./assets/images/icon-close.svg" 
+                  alt="icon-close" 
+                />
+              </button>
+            </ul>
+            <ul>
+              <a>home</a>
+            </ul>
+            <ul>
+              <a>shop</a>
+            </ul>
+            <ul>
+              <a>about</a>
+            </ul>
+            <ul>
+              <a>contact</a>
+            </ul>
+          </nav>
+        </div>
+        <div class="home__principal__container">
+          <div class="home__principal__container__card">
+            <h1  class="home__principal__container__card__title">
+            </h1>
+            <p class="home__principal__container__card__description">
+            </p>
+            <button class="home__principal__container__card__btn-go">
+              SHOP NOW
+              <img src="./assets/images/icon-arrow.svg" alt="icon-arrow" />
+            </button>
+          </div>
+          <div class="home__principal__container__actions">
+            <button class="home__principal__container__actions__btn" onclick="onClickBack()">
+              <img src="./assets/images/icon-angle-left.svg" alt="angle-left" />
+            </button>
+            <button class="home__principal__container__actions__btn"  onclick="onClickNext()">
+              <img
+                src="./assets/images/icon-angle-right.svg"
+                alt="angle-right"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="home__about">
+        <img
+          class="home__about__image"
+          src="./assets/images/image-about-dark.jpg"
+          alt="about-dark"
+        />
+        <div class="home__about__card">
+          <h2 class="home__about__card__title">About our furniture</h2>
+          <p class="home__about__card__description">
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </div>
+        <img
+          class="home__about__image"
+          src="/assets/images/image-about-light.jpg"
+          alt="about-dark"
+        />
+      </div>
+    </div>
+    <script src="./src/js/slide.js"></script>
+    <script src="./src/js/menu.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.nav-mobile {
+  display: none;
+  height: 8vh;
+  justify-content: space-between;
+  &__button-icon{
+    background: none;
+    padding: 0px;
+    border: none;
+    &__icon {
+      width: 6vh;
+      height: 6vh;
+    }
+  }
+  .logo{
+    width: 8vh;
+    object-fit: contain;
+  }
+  @media (max-width: $mobile) {
+    display: flex;
+  }
+}
